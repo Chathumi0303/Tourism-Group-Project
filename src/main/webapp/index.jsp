@@ -433,6 +433,7 @@
             .social-links {
                 justify-content: center;
             }
+
         }
 
         /* Animation for package cards */
@@ -483,8 +484,123 @@
         </div>
     </section>
 
-    <jsp:include page="all.jsp"/>
+    <section class="featured-packages">
+        <h3 class="section-title">Featured Packages</h3>
+        <div class="package-grid">
+            <%-- Ideally, these would be populated from a database using JSTL --%>
+            <%-- Example of how you would use JSTL to loop through packages from a database --%>
+            <%--
+            <c:forEach var="package" items="${featuredPackages}">
+                <div class="package-card">
+                    <div class="package-image" style="background-image: url('${package.imageUrl}')">
+                        <div class="package-price">$${package.price}</div>
+                    </div>
+                    <div class="package-content">
+                        <h4 class="package-title">${package.title}</h4>
+                        <p class="package-description">${package.description}</p>
+                        <div class="package-meta">
+                            <span>${package.duration} days</span>
+                            <span>${package.groupSize} people</span>
+                        </div>
+                        <a href="package-details.jsp?id=${package.id}" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </c:forEach>
+            --%>
 
+            <%-- Static examples for demonstration --%>
+            <div class="package-card">
+                <div class="package-image" style="background-image: url('images/paris.jpg')">
+                    <div class="package-price">$1,299</div>
+                </div>
+                <div class="package-content">
+                    <h4 class="package-title">Romantic Paris Getaway</h4>
+                    <p class="package-description">Experience the magic of Paris with our premium package including Eiffel Tower visit and Seine River cruise.</p>
+                    <div class="package-meta">
+                        <span>7 days</span>
+                        <span>Small group</span>
+                    </div>
+                    <a href="package-details.jsp?id=1" class="view-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-image" style="background-image: url('images/bali.jpg')">
+                    <div class="package-price">$1,499</div>
+                </div>
+                <div class="package-content">
+                    <h4 class="package-title">Bali Beach Paradise</h4>
+                    <p class="package-description">Relax on pristine beaches, visit ancient temples, and immerse yourself in Balinese culture.</p>
+                    <div class="package-meta">
+                        <span>10 days</span>
+                        <span>All inclusive</span>
+                    </div>
+                    <a href="package-details.jsp?id=2" class="view-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-image" style="background-image: url('images/tokyo.jpg')">
+                    <div class="package-price">$1,899</div>
+                </div>
+                <div class="package-content">
+                    <h4 class="package-title">Tokyo Adventure</h4>
+                    <p class="package-description">Explore the vibrant city of Tokyo with expert guides, including visits to Mt. Fuji and traditional villages.</p>
+                    <div class="package-meta">
+                        <span>9 days</span>
+                        <span>Cultural tour</span>
+                    </div>
+                    <a href="package-details.jsp?id=3" class="view-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-image" style="background-image: url('images/safari.jpg')">
+                    <div class="package-price">$2,499</div>
+                </div>
+                <div class="package-content">
+                    <h4 class="package-title">African Safari</h4>
+                    <p class="package-description">Witness the majestic wildlife of Africa on our premium safari tour with luxury accommodations.</p>
+                    <div class="package-meta">
+                        <span>12 days</span>
+                        <span>Wildlife tour</span>
+                    </div>
+                    <a href="package-details.jsp?id=4" class="view-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-image" style="background-image: url('images/santorini.jpg')">
+                    <div class="package-price">$1,699</div>
+                </div>
+                <div class="package-content">
+                    <h4 class="package-title">Greek Islands Cruise</h4>
+                    <p class="package-description">Hop between the stunning Greek islands, enjoying crystal clear waters and authentic cuisine.</p>
+                    <div class="package-meta">
+                        <span>8 days</span>
+                        <span>Island hopping</span>
+                    </div>
+                    <a href="package-details.jsp?id=5" class="view-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <div class="package-image" style="background-image: url('images/machu-picchu.jpg')">
+                    <div class="package-price">$2,199</div>
+                </div>
+                <div class="package-content">
+                    <h4 class="package-title">Peru & Machu Picchu</h4>
+                    <p class="package-description">Trek to the ancient ruins of Machu Picchu and explore the rich culture of Peru.</p>
+                    <div class="package-meta">
+                        <span>11 days</span>
+                        <span>Adventure tour</span>
+                    </div>
+                    <a href="package-details.jsp?id=6" class="view-btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <jsp:include page="destinations-section.jsp"/>
     <section class="cta-section">
         <h3>Ready for Your Next Adventure?</h3>
         <p>Join thousands of satisfied travelers who have experienced our premium tourism packages and professional guide services.</p>
